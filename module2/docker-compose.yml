@@ -1,0 +1,17 @@
+version: "3.9"
+services:
+  user-shell:
+    container_name: user-shell
+    build:
+      dockerfile: Dockerfile
+    hostname: user.shell
+    ports:
+      - "8080:8080"
+    environment:
+      PROFILE: "init"
+    networks:
+      - user-network
+
+networks:
+  user-network:
+    driver: bridge
