@@ -1,0 +1,10 @@
+spring:
+  liquibase:
+    change-log: classpath:db/changelog/db.changelog-master.xml
+  datasource:
+    url: jdbc:postgresql://${DB_HOST:contacts_postgres}:${DB_PORT:5432}/${DB_NAME:contacts_list}
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:postgres}
+    driver-class-name: org.postgresql.Driver
+server:
+  port: 8080
