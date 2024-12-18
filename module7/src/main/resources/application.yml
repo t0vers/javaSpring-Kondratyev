@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: task-tracker
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/task-tracker-db
+      database: task-tracker-db
+
+server:
+  port: 8080

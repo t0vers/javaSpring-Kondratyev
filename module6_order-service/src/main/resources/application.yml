@@ -1,0 +1,6 @@
+spring:
+  application:
+    name=module6_order-service
+  kafka:
+    template:
+      default-topic: order-topic
